@@ -1,0 +1,26 @@
+/* application css */
+/* ----------- G E N E R A L ----------- */
+body, html{height: 100%}
+html, .container-fluid{
+	background: url('/images/bkgd-master.jpg') no-repeat center center fixed; 
+  	 -webkit-background-size: cover;
+  	 -moz-background-size: cover;
+  	 -o-background-size: cover;
+  	background-size: cover;
+}
+
+.container-fluid{height:100%;padding:50px 0 0 35px;}
+
+/* ----------- S P L A S H  S C R E E N ----------- */
+#splash{
+	height:100%;
+}
+#splash img{
+	height:100%;
+}
+
+/* -------- H O M E  P A G E ------- */
+#loginBtn, #loginBtn:hover, #loginBtn:focus, #loginBtn:active{margin-left:120px;background-color: #ef6d41; color:#f8ffee; font-weight:800;}
+.icon-box{margin-bottom: 20px; padding-left: 35px}
+.setup-desc{color:#F8FFEE; margin-top:50px;}
+#registrationLink{font-weight: 800;}

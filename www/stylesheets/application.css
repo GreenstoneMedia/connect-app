@@ -24,3 +24,6 @@ html, .container-fluid{
 .icon-box{margin-bottom: 20px; padding-left: 35px}
 .setup-desc{color:#F8FFEE; margin-top:50px;}
 #registrationLink{font-weight: 800;}
+
+/* ------------------ - R E G I S T R A T I O N  B O X  ----------------- */
+#registration-box{display:none;}

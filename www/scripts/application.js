@@ -7,6 +7,8 @@ function setModal(){
 
 var App = {
 	init: function(){
+		App.attachClickHandlers();
+		//this.testParse();
 	    $( ".container-fluid" ).hide();
 	    var splash = document.getElementById( "splash" );
 	    var show = function() {
@@ -30,31 +32,30 @@ var App = {
 	    }
 	    show();
 	},
+	attachClickHandlers: function(){
+		App.attachRegisterClick();
+		App.attachLoginClick();
+	},
+	testParse: function(){
+		Parse.initialize("RQvHu2aeobFJWidwwym8gV007XmOzqlURzay1c8t", "HmVVwwoXMt8G0tTmiRnhvHhYP3aUxStr0kh1FXXu");
+	},
 	test: function(){
 		var testP = document.getElementById('test');
 		var newContent = document.createTextNode('Hi there and greetings!'); 
 		testP.appendChild(newContent);
 	},
-	testJquery: function(){
-		$('#test').append('Hi there and jquery');
-	},
-	testBtn: function(){
-		$('#loginBtn').click( function(e){
+	attachLoginClick: function(){
+		$('#loginBtn').click(function(e){
 			e.preventDefault();
-			setModal();
+			var view = new supersonic.ui.View('home.html');
+			supersonic.ui.layers.push(view);
 		});
 	},
-	attachRegisterLink: function(){
+	attachRegisterClick: function(){
 		$('#registrationLink').click(function(e){
 			e.preventDefault();
 			var view = new supersonic.ui.View('register.html');
 			supersonic.ui.layers.push(view);
-		});
-	},
-	attachRegisterBtn: function(){
-		$('#registerBtn').click( function(e){
-			e.preventDefault();
-			setModal();
 		});
 	}
 };

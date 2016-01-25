@@ -27,3 +27,7 @@ html, .container-fluid{
 
 /* ------------------ - R E G I S T R A T I O N  B O X  ----------------- */
 #registration-box{display:none;}
+
+#nav-user-icon{
+	background-image:url('images/icons/user.png');
+};

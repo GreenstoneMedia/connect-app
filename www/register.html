@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
   <title>Connect App - Login Index</title>
@@ -20,66 +20,78 @@
   <script src="/components/webcomponentsjs/webcomponents.js"></script>
 </head>
 <body>
-
-  <div class="container-fluid">
-    <div class="registrationDetailsBox">
-      <form>
-       <div class="form-group">
-        <label class="item item-input">
-          <input type="text" id="first-name" class="form-control" placeholder="First Name">
-        </label>
-        
-        <label class="item item-input">
-          <input type="text" id="last-name" class="form-control" placeholder="Last Name">
-        </label>
-        </div>
-
+  <div class="container-fluid springboard" id="main-container">
+    <div class="registrationDetailsBox" id="step1">
+      <h4>Register your Connect Account!</h4>
+      <!-- F O R M  S T E P  O N E -->
+      <form class="form-inline">
         <div class="form-group">
-        <label class="item item-input">
-          <input type="text" id="address" class="form-control" placeholder="Address Line 1">
-        </label>
-        
+          <label class="item item-input">
+            <input type="text" id="first-name" class="form-control input-lg input-step-one" placeholder="First Name">
+          </label>
 
-        
-        <label class="item item-input">
-          <input type="text" id="city" class="form-control" placeholder="City">
-        </label>
-       
-
-      
-        <label class="item item-input">
-          <input type="text" id="state" class="form-control" placeholder="State">
-        </label>
-        
-
-       
-        <label class="item item-input">
-          <input type="text" id="zip" class="form-control" placeholder="Zip Code">
-        </label>
+          <label class="item item-input">
+            <input type="text" id="last-name" class="form-control input-lg input-step-one" placeholder="Last Name">
+          </label>
         </div>
-
+        <label class="item item-input">
+          <input type="text" id="address" class="form-control input-lg input-step-one" placeholder="Address Line 1">
+        </label>
+        <label class="item item-input">
+          <input type="text" id="city" class="form-control input-lg input-step-one" placeholder="City">
+        </label>
         <div class="form-group">
-        <label class="item item-input">
-          <input type="text" id="phone-input" class="form-control" placeholder="Phone">
-        </label>
-
+          <label class="control-label">State 
+            <select class="form-control item item-input input-lg input-step-one" id="state">
+            </select>
+          </label>
         </div>
+        <label class="item item-input">
+          <input type="text" id="zip" class="form-control input-lg input-step-one" placeholder="Zip Code">
+        </label>
         
-        <button class="btn btn-success" id="proceedToRegisterStep2">Complete Registration</button>
+        <div class="form-group">
+          <label class="item item-input">
+            <input type="text" id="phone-input" class="form-control input-lg" placeholder="Phone">
+          </label>
+        </div>
+        <button class="btn btn-info btn-lg" id="proceedToRegisterStep2">Complete Registration</button>
       </form>
    </div>
+   <!-- F O R M  S T E P  T W O -->
+   <div class="registrationDetailsBox" id="step2">
+   <h4>Finish Registration</h4>
+   <small>You will login with your e-mail and the password you select below. Please store this information in a safe place. Anyone who has your e-mail and password can login.</small>
+  <form>
+    <fieldset class="form-group">
+      <label>
+        <input type="text" class="form-control input-lg" id="inputEmail" placeholder="Email" required/>
+      </label>
+    </fieldset>
 
-   <div class="registrationAuth">
+    <fieldset class="form-group">
+      <label>
+        <input type="text" class="form-control input-lg" id="inputPassword" placeholder="Password" required/>
+           </label>
+           <label>
+        <input type="text" class="form-control input-lg" id="confirmPassword" placeholder="Confirm" required/>
+      </label>
+    </fieldset>
+
+   
+      <button class="btn btn-success btn-lg" id="finishBtn"> &nbsp;Finish! &nbsp;<span class="glyphicon glyphicon-ok"></span></button>
+   
+  </form>
       <!-- email will be username -->
       <!-- passwd will be passwd -->
       <!-- confirm passwd -->
       <!-- Create Account submit -->
       <!-- route to home screen -->
-   </div>
+   
 
 
 
-
+</div>
   </div>
 
   <!-- S C R I P T S -->

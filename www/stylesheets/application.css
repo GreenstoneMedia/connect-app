@@ -10,6 +10,7 @@ html, .container-fluid{
 }
 
 .container-fluid{height:100%;padding:50px 0 0 35px;}
+.container-fluid-springboard{padding:5px 0 5px 5px;}
 
 /* ----------- S P L A S H  S C R E E N ----------- */
 #splash{
@@ -24,10 +25,27 @@ html, .container-fluid{
 .icon-box{margin-bottom: 20px; padding-left: 35px}
 .setup-desc{color:#F8FFEE; margin-top:50px;}
 #registrationLink{font-weight: 800;}
-
-/* ------------------ - R E G I S T R A T I O N  B O X  ----------------- */
-#registration-box{display:none;}
-
+#main-container{padding-top: 20px}
+.sm-margin-left{margin-left:7px;}
+.nav-name{vertical-align: bottom;color:#fff;margin-left:3px;}
 #nav-user-icon{
 	background-image:url('images/icons/user.png');
-};
+}
+header{background-color: #89cabb}
+/* ------------------ - R E G I S T R A T I O N  B O X  ----------------- */
+#registration-box{display:none;}
+#state{width:250px;}
+#step1{position:relative;top:0;left:0;}
+#step2{display:none;position:relative;top:0;left:0;}
+
+/* ------------------ - S P R I N G  B O A R D   ----------------- */
+.springboard-image{width:140px;padding-left:2px;}
+.springboard-button{width:140px; padding-right:0px;padding-left:0px;margin-bottom:15px;background: rgba(0, 0, 0, 0.2); border:0px solid #fff; border-radius:12px;}
+/* ------------------ - M E S S A G E  P R E  S E L E C T ------------------ -*/
+#message-pre-select-box{padding:10px 15px 15px 15px !important;}
+.positive-image{padding:0;}
+.image-heading{width:100%;}
+.image-box{width:19px; margin:0 auto;}
+.panel{
+    background-color: rgba(245, 245, 245, 0.3);
+}

@@ -5,18 +5,21 @@
 
 navigation-bar {
   background-color: #89cabb;
-  color: #ffffff;
+  color:#ffffff;
 }
 
 navigation-bar title {
   color: #ffffff;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 600;
+  font-family: helvetica, tahoma, sans-serif; 
 }
 
 navigation-bar button, navigation-bar back-bar-button {
-  color: #ffffff;
-  font-weight: 300;
+  color: #ff0000;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: helvetica, tahoma, sans-serif; 
 }
 
 tab-bar {

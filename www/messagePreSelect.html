@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-  <title>Connect App - Home Index</title>
+  <title>Connect App - Message Select Index</title>
 
   <!--<link rel="stylesheet" href="/components/supersonic/css/supersonic.css"> -->
   <link rel="stylesheet" href="/thirdparty/bootstrap/css/bootstrap.min.css">
@@ -28,15 +28,29 @@
 </div>
 </div>
 </header>
-  <div class="container-fluid container-fluid-springboard" id="main-container">
-    <div class="row">
-      <div class="col-xs-6"><div class="springboard-button"><img src="images/springboard-share-a-feeling.png" class="springboard-image"/></div></div>
-      <div class="col-xs-6"><div class="springboard-button"><img src="images/springboard-appreciation.png" class="springboard-image"/></div></div>
+  <div class="container-fluid" id="message-pre-select-box">
+    <h4 class="pre-select-type text-center">Share a Feeling</h4>
+
+    <div class="panel">
+    <div class="panel-heading image-heading"><div class="image-box"><img src="images/icons/positive-face.png" class="positive-image" width="19" height="19" /></div></div>
+      <ul class="list-group">
+        <li class="list-group-item list-group-item-success">Euphoric</li>
+        <li class="list-group-item list-group-item-success">Beautiful</li>
+        <li class="list-group-item list-group-item-success">Exciting</li>
+        <li class="list-group-item list-group-item-success">Belonging</li>
+        <li class="list-group-item list-group-item-success">Exuberant</li>
+      </ul>
     </div>
-    <div class="row">
-      <div class="col-xs-6"><div class="springboard-button"><img src="images/springboard-repair.png" class="springboard-image"/></div></div>
-      <div class="col-xs-6"><div class="springboard-button"><img src="images/springboard-active-listening.png" class="springboard-image"/></div></div>
-    </div>
+
+    <div class="panel">
+    <div class="panel-heading image-heading"><div class="image-box"><img src="images/icons/negative-face.png" class="positive-image"  width="19" height="19" /></div></div>
+    <ul class="list-group">
+            <li class="list-group-item list-group-item-danger">Cold</li>
+        <li class="list-group-item list-group-item-danger">Discouraged</li>
+        <li class="list-group-item list-group-item-danger">Irritated</li>
+        <li class="list-group-item list-group-item-danger">Disgusted</li>
+        <li class="list-group-item list-group-item-danger">Sad</li>
+        </ul>
   
  
 
@@ -49,6 +63,6 @@
   <script src="/thirdparty/bootstrap/js/bootstrap.min.js"></script>
 
 
-  <script src="/scripts/springboard.js"></script>
+  <script src="/scripts/messagePreSelect.js"></script>
 </body>
 </html>

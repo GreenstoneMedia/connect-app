@@ -33,13 +33,13 @@
   <form>
     <fieldset class="form-group">
     <label>
-    <input type="text" class="form-control input-lg" placeholder="Email" required/>
+    <input type="text" class="form-control input-lg" id="inputEmail" placeholder="Email" required/>
     </label>
     </fieldset>
 
     <fieldset class="form-group">
       <label>
-      <input type="text" class="form-control input-lg" placeholder="Password" required/>
+      <input type="text" class="form-control input-lg" id="inputPassword" placeholder="Password" required/>
       </label>
     </fieldset>
     <fieldset>
@@ -52,7 +52,22 @@
   </div>
 
   </div>
-
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Error</h4>
+      </div>
+      <div class="modal-body">
+       <p>Email and password do not match our records.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+  
+      </div>
+    </div>
+  </div>
+</div>
   <!-- S C R I P T S -->
   <script src="/thirdparty/jquery/jquery.min.js"></script>
   <!-- FIX ME : please store parse script locally -->
@@ -65,5 +80,6 @@
   </script>
 
   <script src="/scripts/application.js"></script>
+
 </body>
 </html>

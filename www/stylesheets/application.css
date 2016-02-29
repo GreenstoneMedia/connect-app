@@ -1,7 +1,7 @@
 /* application css */
 /* ----------- G E N E R A L ----------- */
 body, html{height: 100%}
-html, .container-fluid{
+html, .container-fluid, .container{
 	background: url('/images/bkgd-master.jpg') no-repeat center center fixed; 
   	 -webkit-background-size: cover;
   	 -moz-background-size: cover;
@@ -11,6 +11,7 @@ html, .container-fluid{
 
 .container-fluid{height:100%;padding:50px 0 0 35px;}
 .container-fluid-springboard{padding:5px 0 5px 5px;}
+header{position:fixed;width:100%;}
 
 /* ----------- S P L A S H  S C R E E N ----------- */
 #splash{
@@ -46,6 +47,16 @@ header{background-color: #89cabb}
 .positive-image{padding:0;}
 .image-heading{width:100%;}
 .image-box{width:19px; margin:0 auto;}
-.panel{
+.panel, .container{
     background-color: rgba(245, 245, 245, 0.3);
+}
+.force-full{padding-bottom: 300px; padding-top: 50px;}
+/* ------------ M E S S A G E  S C R E E N ----------------*/
+.well-message-me {
+    background: rgb(22, 105, 173);
+}
+
+.well-message-other{
+	background: rgba(139, 161, 148, 0.5) !important;
+	color:#fff !important;
 }

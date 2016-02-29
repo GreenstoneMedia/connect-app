@@ -65,7 +65,7 @@ var App = {
 	init: function(){
 		//D E B U G : R E M O V E  O N  D E P L O Y
 		//auto load screens below
-		var view = new supersonic.ui.View('messagePreSelect.html');
+		var view = new supersonic.ui.View('account.html');
 		supersonic.ui.layers.push(view);
 		//E N D  D E B U G
 

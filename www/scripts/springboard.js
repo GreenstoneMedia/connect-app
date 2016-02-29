@@ -1,9 +1,7 @@
 var dataUtil = {};
 
 var Api = {
-	testTokenAuth: function(){
-		
-
+	testTokenAuth: function(){	
 		$.ajax({
 			url: 'http://192.241.247.128:8080/api/memberinfo',
 			type: 'get',
@@ -26,6 +24,13 @@ var Api = {
 	}
 };
 
+var messageUtil = {
+	proceed: function(){
+			var view = new supersonic.ui.View('messagePreSelect.html');
+			supersonic.ui.layers.push(view);
+	}
+}
+
 var Springboard = {
 	init: function(){
 		steroids.view.navigationBar.hide();
@@ -36,7 +41,8 @@ var Springboard = {
 	attachHandlers: function(){
 		$('.springboard-button').click(function(e){
 			e.preventDefault();
-			Api.testTokenAuth();
+			//Api.testTokenAuth();
+			messageUtil.proceed();
 		});
 	}
 

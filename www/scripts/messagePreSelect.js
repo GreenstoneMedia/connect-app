@@ -11,22 +11,16 @@ var messagePreSelect = {
 		$('.list-group-item').click( function(e){
 			e.preventDefault();
 			var listFeelingText = $(this).html();
+			//will need to store a few things in ls
 
-			// for( var i = 0; i < CONTACTS.length; i++){
+			var view = new supersonic.ui.View('message.html');
+			supersonic.ui.layers.push(view);
+		});
 
-			// 	$('#contact').append('<option>' + i + '</option>');
-			// }
-
-		
-
-
-			$('#messageModal').modal('show');
-			$('.message-body').append('I feel ' + listFeelingText);
-
-		
-
-
-			
+		$('#customMessageBtn').click(function(e){
+			e.preventDefault();
+			var view = new supersonic.ui.View('message.html');
+			supersonic.ui.layers.push(view);
 		});
 	}
 };
